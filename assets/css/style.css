@@ -2,10 +2,10 @@
 @font-face {
   font-family: 'Orkney_regular';
   src: url('../fonts/orkney-regular-webfont.eot');
-  src: url('../fonts/orkney-regular-webfont.eot?#iefix') format('embedded-opentype'),  
-        url('../fonts/orkney-regular-webfont.woff') format('woff'),
-        url('../fonts/orkney-regular-webfont.ttf') format('truetype'), 
-        url('../fonts/orkney-regular-webfont.svg#Orkney_regular') format('svg');
+  src: url('../fonts/orkney-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/orkney-regular-webfont.woff') format('woff'),
+    url('../fonts/orkney-regular-webfont.ttf') format('truetype'),
+    url('../fonts/orkney-regular-webfont.svg#Orkney_regular') format('svg');
 }
 
 
@@ -14,70 +14,85 @@
   text-align: justify;
   /* border: 2px solid red; */
 }
-body{
+
+body {
   font-family: Orkney_regular, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color:brown;  
-    /* background-color: rgb(248,234,73);couleur pastel   */
-  background-color: rgba(255, 151, 32, 0.9); /* couleur soutenue  */
+  color: brown;
+  /* background-color: rgb(248,234,73);couleur pastel   */
+  background-color: rgba(255, 151, 32, 0.9);
+  /* couleur soutenue  */
 }
-.pastel{
-  background-color:rgb(248,234,73);
- }
+
+.pastel {
+  background-color: rgb(248, 234, 73);
+}
 
 
-  /* img[alt*="facade"]{
+/* img[alt*="facade"]{
     opacity:1;
   } */
 
 /*   **********  css Nav bar et bannière   *******    */
-#navbarSupportedContent{
+#navbarSupportedContent {
   width: auto;
 }
+
 #nav_bar {
-  background-color: rgb(205, 24, 31); /* couleur fond rouge  */
-  opacity:1;
+  background-color: rgb(205, 24, 31);
+  /* couleur fond rouge  */
+  opacity: 1;
   justify-content: center;
-   /* pour centrage des liens // A verifier */
+  /* pour centrage des liens // A verifier */
 }
-#lien_accueil{
-padding-right: 10%; /* pour centrage joli  du lien Accueil */
+
+#lien_accueil {
+  padding-right: 10%;
+  /* pour centrage joli  du lien Accueil */
 }
+
 .navbar-nav {
   /* text-align: center;  */
-     /* pour centrage des liens */
+  /* pour centrage des liens */
   margin: auto;
 }
 
-.accordion-button{
+.accordion-button {
   color: brown !important;
 }
 
-/*   ************   css animation phrase  **********    */ 
+/*   ************   css animation phrase  **********    */
 @keyframes defile {
   from {
     margin-left: 100%;
-    width: 100%; /* 300% au départ */
+    width: 100%;
+    /* 300% au départ */
   }
+
   to {
     margin-left: 0%;
     width: 100%;
   }
 }
+
 .animation1 {
-  animation: defile 7s infinite alternate;  /* 3s au départ */
+  animation: defile 7s infinite alternate;
+  /* 3s au départ */
   font-size: 14px;
   color: rgb(205, 24, 31);
   /* font-weight: bold; */
 }
-#Animation1{   /*hr de séparation avec le corps */
-  height: 3px; 
-  color:rgb(205, 24, 31);
+
+#Animation1 {
+  /*hr de séparation avec le corps */
+  height: 3px;
+  color: rgb(205, 24, 31);
 }
-#divAnimation{
-  background-color: rgb(248,234,73);
- padding-top: 0.625em;
- line-height: 0.938em;
- overflow: hidden;
+
+#divAnimation {
+  background-color: rgb(248, 234, 73);
+  padding-top: 0.625em;
+  line-height: 0.938em;
+  overflow: hidden;
 }
 
 /*      CSS pour map   */
@@ -85,31 +100,35 @@ padding-right: 10%; /* pour centrage joli  du lien Accueil */
   width: 100%;
   height: 300px;
   position: relative;
-  margin:0;
-  padding:0; 
+  margin: 0;
+  padding: 0;
 }
+
 /* média query pour la map => reduction de taille sur modele sm */
 @media (max-width: 992px) {
   #map {
     width: 100%;
     height: 200px;
     position: relative;
-    margin:0;
-    padding:0; 
+    margin: 0;
+    padding: 0;
   }
- }
-.small{
- width: 50px;
-height: 50px;}
+}
+
+.small {
+  width: 50px;
+  height: 50px;
+}
 
 #Contacts {
 
   background-color: rgba(255, 217, 4, 0.972);
 }
 
-#listeMenu{
-  list-style-type:none;
+#listeMenu {
+  list-style-type: none;
 }
+
 .imgMenu {
   width: 20%;
 }
@@ -119,30 +138,32 @@ height: 50px;}
   padding: 10%;
 
 }
-.titreform{
+
+.titreform {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
 }
 
-label
-{
-    display: block;
-    width: 150px;
-    float: left;
+label {
+  display: block;
+  width: 150px;
+  float: left;
 }
-#colform{
+
+#colform {
   background-color: rgba(255, 196, 0, 0.6);
 }
 
 /*    ********** css avis et a propos **********  */
-#colapropos, #colavis{
+#colapropos,
+#colavis {
   /* background-color: rgb(255, 196, 0);  voir class pastel */
   padding: 1.250em;
   align-items: center;
   margin: 20px 0px;
 }
 
-.mentionCSS{
-  color:brown !important;
+.mentionCSS {
+  color: brown !important;
 }
